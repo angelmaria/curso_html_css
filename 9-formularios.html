@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- 
+        
+    1. FORMULARIOS HTML
+        
+    Un formulario es un mecanismo para recolectar información mediante campos para poder enviar al servidor backend de una aplicación web, 
+    de forma que esos datos puedan ser procesados y/o almacenados en una base de datos.
+
+    Se crean con la etiqueta <form>
+  
+    Un formulario está compuesto por elementos <input> de diferente tipo:
+    texto: text
+    área de texto
+    url
+    casillas de verificación: checkboxes
+    botones de opción: radio buttons
+    botón de envío: submit
+    etc
+
+    Estos elementos input tienen los siguientes atributos:
+    El atributo name es obligatorio para poder referenciar los campos desde el servidor cuando se envíen los datos
+    El atributo type, sirve para indicar qué tipo de campo tenemos si texto, numérico, contraseña, fecha... La lista de posibles valores es: 
+
+    <input type="button">
+    <input type="checkbox">
+    <input type="color">
+    <input type="date">
+    <input type="datetime-local">
+    <input type="email">
+    <input type="file">
+    <input type="hidden">
+    <input type="image">
+    <input type="month">
+    <input type="number">
+    <input type="password">
+    <input type="radio">
+    <input type="range">
+    <input type="reset">
+    <input type="search">
+    <input type="submit">
+    <input type="tel">
+    <input type="text">
+    <input type="time">
+    <input type="url">
+    <input type="week">
+
+    -->
+
+  <h2>Formulario simple</h2>
+
+
+<form action="/product-edit" method="POST">
+
+  Nombre:
+  <input id="" class="" name="nombre" type="text" placeholder="Alan" value="Juan">
+  <br>
+  Apellido:
+  <input id="" class="" name="apellido" type="text" placeholder="Sastre" value="Ferrero">
+
+</form>
+
+
+<div style="margin-top:300px;"></div>
+<!-- 
+<form action="/user-edit" method="">
+
+  <input>
+  <input>
+  <input>
+
+  <input>
+</form> -->
+
+
+  <form >
+    Nombre de usuario
+    <input type="text" name="nombre"><br>
+
+    Apellido de usuario
+    <input type="text" name="apellido">
+  
+  </form>
+  <br>
+  <hr>
+
+  <!-- La etiqueta <label> permite mostrar un texto sobre cada campo facilitando su lectura y también su selección a la hora de rellenar los datos
+      esta etiqueta tiene un atributo for que apunta al atributo id 
+      El atributo name en un elemento de tipo <input> especifica su nombre, sirve para referenciar los campos 
+      desde JavaScript y también en el backend cuando se reciben los datos
+    -->
+  <h2>Formulario con elemento label</h2>
+  <form>
+    <label for="first-name">First name:</label><br>
+    <input type="text" name="first-name" id="first-name"><br>
+
+    <label for="last-name">Last name:</label><br>
+    <input type="text" id="last-name" name="last-name">
+  </form>
+  <br>
+  <hr>
+
+<!-- El atributo placeholder permite definir un ejemplo de qué tipo de valor se espera para un determinado input: -->
+<h2>Formulario con atributo placeholder</h2>
+<form action="/users" method="POST">
+  <label for="first-name">First name:</label><br>
+  <input type="text" id="first-name" name="first-name" placeholder="Alan"><br>
+
+  <label for="last-name">Last name *</label><br>
+  <input type="text" id="last-name" name="last-name" placeholder="Sastre"><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" placeholder="alan@alansastre.co"><br>
+
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password"><br>
+
+  <label for="web">Web:</label><br>
+  <input type="url" id="web" name="web" placeholder="www.alansastre.co"><br>
+
+  <label for="price">Price: </label><br>
+  <input id="price" type="number" step="0.01" value="0.00" ><br>
+
+
+  <label for="mensaje">Mensaje:</label><br>
+  <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"
+  rows="6" cols="40"></textarea>
+</form>
+<br>
+<hr>
+
+
+  <!-- input type radio. Este tipo de elemento nos permite seleccionar UNA de muchas opciones -->
+<!-- El atributo value nos permite añadirle desde el código un valor al campo, esto se hace cuando queremos cargar datos 
+desde el servidor en los campos del formulario cuando un usuario tiene que editar datos de la base de datos -->
+
+  <h2>Formulario input tipo radio</h2>
+
+
+  <form>
+
+    <input type="radio" id="prueba" name="gender" value="prueba">
+    <label for="prueba">Prueba</label><br>
+
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Masculino</label><br>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Femenino</label><br>
+
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Otro</label>
+  </form>
+  <br>
+  <hr>
+
+  <!-- input type checkbox. Este tipo de elemento nos permite seleccionar CERO o MUCHAS de muchas opciones -->
+
+  <h2>Formulario input tipo checkbox</h2>
+
+  <form>
+
+
+    <input type="checkbox" id="vehicle0" name="vehicle0" value="Patinete">
+    <label for="vehicle0">Patinete</label><br>
+
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1">Bicicleta</label><br>
+
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2">Coche</label><br>
+
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3">Barca</label>
+  </form>
+  <br>
+  <hr>
+
+
+  <!-- Elemento textarea para permitir escribir textos largos:  -->
+
+  <h2>Formulario textarea</h2>
+
+  <form>
+    <textarea name="message" rows="10" cols="30">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </textarea>
+  </form>
+  <br>
+  <hr>
+
+
+
+
+  <!-- Para enviar el formulario al servidor necesitamos que exista un botón que permita realizar el envío
+    - Para eso utilizamos input type submit 
+    - El atributo action en un formulario permite especificar el endpoint del backend hacia donde enviar los datos
+    - El atributo method en un formulario permite especificar el método HTTP con el cuál enviar los datos,
+    por ejemplo GET enviará los parámetros y sus valores en la url, POST los enviará en el cuerpo de la petición
+    Cuando enviamos datos que queremos que se registren en la base de datos utilizamos el método POST
+    - El atributo value en los input recoge el valor a enviar
+        
+    -->
+
+  <h2>Formulario action y submit</h2>
+
+  <form action="/action_page.php" method="POST">
+    <label for="first-name">First name:</label><br>
+    <input type="text" id="first-name" name="first-name" value="John"><br>
+
+    <label for="last-name">Last name:</label><br>
+    <input type="text" id="last-name" name="last-name" value="Johnson"><br>
+
+    <input type="submit" value="Enviar">
+  </form>
+  <br>
+  <hr>
+
+
+  <!-- Selector de opciones -->
+
+  <h2>Formulario con elemento select</h2>
+
+  <form action="/action_page.php" method="POST">
+
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" value="Mondeo"><br>
+
+
+    <label for="tienda">Seleccionar Tienda:</label><br>
+    <select id="tienda" name="tiendas" size="2" multiple>
+      <!-- <option value="0">Seleccionar:</option> -->
+      <option value="1">Amazon</option>
+      <option value="2">Ebay</option>
+      <option value="3">Best Buy</option>
+      <option value="4">Mercado Libre</option>
+    </select>
+    <br>
+
+    <label for="cars">Seleccionar fabricante:</label><br>
+    <select id="cars" name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+  </form>
+  <br>
+  <hr>
+
+
+  <!-- Selector de opciones múltiple  -->
+
+
+  <h2>Formulario con elemento select</h2>
+
+  <form action="/action_page.php" method="POST">
+
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" value="Mondeo"><br>
+
+    <label for="cars">Seleccionar fabricante:</label>
+    <select id="cars" name="cars" size="4" multiple>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+  </form>
+  <br>
+  <hr>
+
+
+  <!-- Cuando un formulario es muy extenso utilizamos los elementos fieldset y legend en formularios 
+       para agrupar datos relacionados -->
+
+       <h2>Formulario con elemento fieldset</h2>
+
+       <form action="/action_page.php" method="POST">
+        <fieldset>
+          <legend>Elija lenguaje de programación backend</legend>
+      
+          <input type="radio" id="java" name="java">
+          <label for="java">Java</label><br/>
+      
+          <input type="radio" id="python" name="python">
+          <label for="python">Python</label><br/>
+      
+          <input type="radio" id="golang" name="golang">
+          <label for="golang">Go</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Elija framework frontend</legend>
+      
+          <input type="radio" id="angular" name="angular">
+          <label for="angular">Angular</label><br/>
+      
+          <input type="radio" id="react" name="react">
+          <label for="react">React</label><br/>
+      
+          <input type="radio" id="vuejs" name="vuejs">
+          <label for="vuejs">Vuejs</label>
+        </fieldset>
+
+      </form> 
+    <br>
+    <hr>
+
+
+  <!-- Opciones predefinidias en campos de datos: datalist 
+  La diferencia entre datalist y select es que select te obliga a seleccionar una de las opciones que ofrece mientras
+que datalist no te obliga, el usuario puede escribir una opción que no esté en el datalist-->
+
+  <h2>Formulario con elemento datalist</h2>
+
+  <form action="/action_page.php" method="POST">
+
+    <input list="lenguajes">
+    <datalist id="lenguajes">
+      <option value="Java">
+      <option value="Python">
+      <option value="Golang">
+      <option value="C">
+      <option value="C++">
+    </datalist>
+
+  </form> 
+  <br>
+  <hr>
+
+
+  <!-- input de tipo password, lo utilizamos para ocultar a la vista datos sensibles, como son las contraseñas -->
+
+  <h2>Formulario con opción reset</h2>
+
+  <form>
+    <label for="username">Nombre de usuario:</label><br>
+    <input type="text" id="username" name="username" value="Gandolfi"><br>
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email" value="gandolfi@cosmicdev.com"><br>
+    <input type="reset">
+  </form> 
+  <br>
+  <hr>
+
+
+    <!-- input de tipo selector de color, permite al usuario seleccionar un color entre toda la escala de colores -->
+
+
+  <h2>Formulario con selector de color</h2>
+
+  <form>
+    <label for="favcolor">Seleccionar color:</label>
+    <input type="color" id="favcolor" name="favcolor">
+  </form> 
+  <br>
+  <hr>
+
+    <!-- input de tipo selector de fecha, permite al usuario seleccionar un color entre toda la escala de colores -->
+
+
+  <h2>Formulario con selector de fecha</h2>
+
+  <form>
+    <label for="birthday">Introduzca su cumpleaños:</label>
+    <input type="date" id="birthday" name="birthday">
+  </form> 
+  <br>
+
+  <!-- Si queremos limitar la fecha mínima y máxima a seleccionar podemos utilizar los atributos max y min -->
+
+  <h2>Formulario con selector de fecha, min y max establecidos</h2>
+
+  <form>
+    <label for="birthday">Introduzca su cumpleaños:</label>
+    <input type="date" id="birthday" name="birthday" max="2002-12-01" min="1920-01-01">
+  </form> 
+  <br>
+
+  <h2>Formulario con selector de fecha y tiempo</h2>
+  <form>
+    <label for="registertime">Introduzca la fecha y el momento del registro:</label>
+    <input type="datetime-local" id="registertime" name="registertime">
+  </form> 
+  <hr>
+
+    <!-- input de tipo email, sirve para validar automáticamente que el texto introducido se trata de un email bien estructurado -->
+
+
+    <h2>Formulario con input de tipo email</h2>
+
+    <form action="/account" method="POST">
+      <label for="email">Introduzca su email:</label>
+      <input type="email" id="email" name="email">
+      <input type="submit" value="Enviar">
+    </form> 
+    <br>
+    <hr>
+
+
+
+
+
+</body>
+
+</html>

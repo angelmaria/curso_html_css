@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Para mostrar una imagen utilizamos la etiqueta <img>
+        Este tipo de etiqueta no necesita cierre, simplemente se abre y no es necesario especificar </img>, se trata de un elemento vacío 
+    
+        Para especificar la ruta hacia la imagen que se debe mostrar utilizamos el atributo src
+        La ruta puede ser:
+        Una url externa, por ejemplo: https://via.placeholder.com/150
+        Una dirección a una imagen de la propia web, por ejemplo: /img/logo.png  -- En este caso nos debemos asegurar que la imagen existe en nuestro directorio
+        donde estén alojados los archivos html
+        -->
+    <!-- 1. Etiquetas con cierre
+        2. Atributos 
+        3. Etiquetas vacías o etiquetas sin cierre -->
+
+
+
+
+    <a href="https://www.google.es" title="Ejemplo enlace con imagen" target="_blank">
+        <img src="ejemplo/imagen-prueba.jpg" alt="Logo tecnología HTML para la programación de páginas web">
+    </a>
+
+
+    <br>
+    <p>Primera imagen:</p>
+    <img src="https://via.placeholder.com/150">
+
+    <br>
+    <p>A medida que escribo lo previsualizo:</p>
+    <img src="img/imagen-prueba.jpg">
+    <br>
+
+    <!-- En los elementos de tipo imagen también utilizamos el atributo alt, lo cual nos permite especificar un texto alternativo en caso
+        de que la imagen no pueda cargarse porque se ha roto el link:  -->
+
+    <img src="https://via.placeholder.com/150" alt="Imagen de prueba">
+
+    <br>
+    <!-- Para especificar el tamaño de la imagen a mostrar existen diferentes maneras:
+
+        1 - Mediante atributos:
+            width="500" height="500"
+            (width para ancho)
+            (height para alto )
+        2 - Mediante clases
+            class="img-fluid"
+        3 - Mediante estilos CSS inline:
+            style="width:500px" -->
+
+            <style>
+                .ancho-200{
+                    width: 200px;
+                }
+            </style>
+    <hr>
+    <p>Imagen original:</p>
+    <img src="https://via.placeholder.com/150">
+
+    <hr>
+    <p>Ejemplo 1:</p>
+    <img src="https://via.placeholder.com/150" alt="Imagen de prueba" width="200" height="200">
+    <br>
+    <hr>
+    <p>Ejemplo 2:</p>
+    <img src="https://via.placeholder.com/150" alt="Imagen de prueba" class="ancho-200">
+    <!-- Nota: la clase no existe, hay que crearla cuando se estudie CSS -->
+    <br>
+    <p>Ejemplo 3:</p>
+    <img src="https://via.placeholder.com/150" alt="Imagen de prueba" style="width:250px;height:200px;">
+    <br>
+
+
+
+</body>
+
+</html>

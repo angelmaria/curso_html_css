@@ -1,0 +1,21 @@
+.big {
+    color:red;
+    font-family: 'Oswald', Georgia;
+}
+
+.giant {
+    text-size-adjust: 2em;
+}
+
+.normal {
+    background-color: aliceblue;
+}
+
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+
+/* formating the table */
+table, th, td{
+    border:1px solid black;
+}

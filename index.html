@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="tiny.js">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Awesome App</title>
+</head>
+<body>
+    <div class="frame">
+    <p class="big">This is some text</p>
+    <div class="card">Magic Card</div>
+    <a href="https://google.com" style="text-align: center; color: white; text-shadow: black 3px, 2px;">Un link</a>
+    </div>
+<!-- this is a commetn -->
+<pre>Ut nulla anim fugiat do est magna non nostrud duis mollit. Dolore consectetur elit laboris sit <a href="#test">deserunt</a> esse qui dolor consequat. Ut exercitation quis nisi excepteur. Amet exercitation Lorem et 🤪 eiusmod incididunt ut ullamco aliquip. Excepteur aliquip exercitation ipsum dolor dolore.</pre>
+
+<pre>cillum ea nostrud sint <b>Lorem</b> magna. Laboris et dolor laboris mollit eiusmod laboris sit qui do deserunt enim aliquip quis ex. Cupidatat Lorem aliqua veniam officia mollit non commodo.</pre>
+
+<p>Cupidatat ipsum id officia ea ex irure veniam ullamco consectetur mollit et. Veniam laborum culpa elit eu adipisicing occaecat in anim eiusmod mollit dolor adipisicing. Cillum pariatur enim tempor et nostrud elit reprehenderit Lorem. Laborum veniam nostrud Lorem adipisicing pariatur. Adipisicing duis duis commodo ea in nisi. Non adipisicing quis veniam sint eiusmod eiusmod proident.</p>
+
+<blockquote>Aliqua do eu sit voluptate sunt. Voluptate et aliquip sunt cupidatat dolor id minim consectetur. Aliquip nostrud quis amet laboris sunt proident nulla sint reprehenderit pariatur cillum eiusmod eiusmod. Veniam incididunt laboris et duis et magna sint non. Voluptate eiusmod ex laborum et et incididunt ad incididunt qui irure. Ea et reprehenderit magna anim aliqua.</blockquote>
+
+<div style="float:left; padding:10px;"><a href="https://www.google.com" target="_new"><img src="https://placehold.co/400" alt="imagen prueba" width="200px"></a></div>
+<div><img src="imagen_600x400.svg" alt="imagen local"></div>
+
+
+<div style="clear:both">
+    <ol>
+        <li><a href="https://www.google.com">Enlace a google</a></li>
+        <li><a href="mailto:angelmaria75@gmail.com">Email Angel</a></li>
+        <li><a href="tel:+34684302668">Llamar por telefono</a></li>
+    </ol>
+</div>
+
+<p>
+    <a href="/curso_html_css/7-tablas.html" target="_blank">Acceso a tablas</a>
+</p>
+
+<script>
+    tinymce.init({
+      selector: 'textarea',
+      plugins: 'ai tinycomments mentions anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed permanentpen footnotes advtemplate advtable advcode editimage tableofcontents mergetags powerpaste tinymcespellchecker autocorrect a11ychecker typography inlinecss',
+      toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | align lineheight | tinycomments | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+      mergetags_list: [
+        { value: 'First.Name', title: 'First Name' },
+        { value: 'Email', title: 'Email' },
+      ],
+      ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
+    });
+  </script>
+  <textarea style="width:500px; height:300px">
+    Welcome to TinyMCE!
+  </textarea>
+  <p><button onclick="console.log('boton pulsado');">Funciona</button></p>
+  <p><button onclick="alert('boton pulsado');">Alerta</button></p>
+  <p><button onclick="window.location.href='https:www.google.com', '_blank'">JS a otro link</button></p>
+  <p><button onclick="">Con Js clasico</button></p>
+  <p><button swal.fire>Bonito</button></p>
+<ol>
+    <li>Hacer autoevaluacion Fundamentos</li>
+    <li>Repasar clase HTML5</li>
+    <li>Hacer proyecto grupal</li>
+    <li>Frinalizar curso</li>
+    <li><a href="https://www.google.com" target="_new">Enlace a otra web</a></li>
+</ol>
+  
+<ol>
+    <li>Hacer autoevaluacion Fundamentos</li>
+    <li>Repasar clase HTML5</li>
+    <li>Hacer proyecto grupal
+        <ul>
+            <li>Organizar el equipo</li>
+            <li>Decidir la tematica</li>
+            <li>Planificar la solucion y alcance</li>
+            <li>Repartir trabajos</li>
+            <li>Desarrollo</li>
+        </ul>
+    </li>
+    <li>Frinalizar curso</li>
+    <li><a href="https://www.google.com" target="_new">Enlace a otra web</a></li>
+</ol>
+
+<div style="padding:10px; border: 1px solid black; width:auto">
+    <dl>
+        <a id="test">
+            <dt>HTML5</dt>
+        </a>
+        <dd>Nostrud nulla eu adipisicing eu aliquip excepteur dolore sunt nostrud. Laboris ea et quis amet. Est veniam occaecat laborum eu.</dd>
+        <dt>CSS3</dt>
+        <dd>Irure ullamco voluptate labore veniam qui irure. Non fugiat consectetur tempor culpa consequat aliquip ipsum laboris sint deserunt. Aliqua ex incididunt id proident dolore velit qui non.</dd>
+    </dl>
+</div>
+<p>
+    Lorem cillum aliquip deserunt cupidatat cupidatat quis sunt id amet occaecat nulla. Adipisicing tempor nulla elit nostrud officia consequat. Sunt reprehenderit ipsum esse dolor est reprehenderit et voluptate ullamco. Incididunt sint mollit elit culpa pariatur excepteur. Veniam reprehenderit sit amet ex veniam sint adipisicing fugiat duis reprehenderit nostrud aute.
+
+Officia labore laboris sunt est est aliquip nisi. Aliquip consequat eu fugiat ad veniam. Quis fugiat occaecat enim consequat labore eu proident irure incididunt occaecat ex ullamco Lorem anim. Incididunt ullamco anim minim aliquip irure culpa nisi. Dolor ad nulla cillum consequat exercitation exercitation quis velit ea occaecat aliqua. Exercitation incididunt reprehenderit irure est aliqua officia culpa ipsum ex sunt nostrud laborum. Do duis pariatur anim sint in magna aliqua excepteur.
+
+Duis duis nulla sit ipsum aliqua occaecat proident occaecat excepteur sunt excepteur occaecat consequat laboris. Magna non culpa consequat est voluptate officia nulla do ad. Enim eu occaecat cupidatat ex in ipsum. Excepteur labore quis nisi aute aliquip. Eu nisi cillum commodo eiusmod elit incididunt. Non nulla fugiat quis Lorem minim laboris minim occaecat consequat incididunt occaecat fugiat duis aliqua.
+
+Eu veniam enim Lorem enim quis eiusmod aliquip est sit sit irure. Minim adipisicing consequat dolore fugiat voluptate ullamco non aliquip amet aute id. Culpa consectetur do aliquip ut exercitation pariatur fugiat laboris. Exercitation ea sunt ipsum nulla est cupidatat aliqua nulla ut proident. Laborum ut proident exercitation fugiat proident duis culpa ipsum id esse pariatur cillum ut. Commodo aliquip duis sunt Lorem laboris ullamco laborum deserunt cupidatat ut esse mollit. In tempor cupidatat labore veniam.
+
+Anim commodo aliqua laborum ex exercitation commodo ea eiusmod sit laborum nisi cillum mollit. Exercitation ex id eiusmod velit sit. Velit nisi quis reprehenderit aute. Sint aliqua proident est mollit ut non sit. Ullamco dolore do do id occaecat in. Eiusmod laborum in minim laborum ut mollit esse in officia consequat.
+
+Amet sit sit ad aliquip irure id consequat qui proident ea irure anim aliqua. Laboris anim ut velit adipisicing nulla commodo exercitation pariatur culpa eiusmod nulla. Pariatur enim non eiusmod tempor ut Lorem sunt. Consequat adipisicing ipsum sunt elit incididunt veniam officia labore excepteur in qui ullamco. Irure irure est occaecat cillum duis laboris minim aute. Cillum enim duis reprehenderit pariatur do officia proident id exercitation irure officia enim. Culpa enim nostrud irure fugiat enim irure adipisicing ex excepteur aliquip dolore incididunt aliqua nisi.
+
+Amet cillum reprehenderit aliquip aute aute adipisicing do est est ad. Deserunt dolor minim do velit eiusmod. Do consequat minim aliquip deserunt eu eiusmod consectetur officia. Sint magna nulla labore aute mollit ea est non ex excepteur deserunt. Ullamco esse ea officia ut nulla in adipisicing.
+
+Ex tempor id eiusmod cillum id. Elit ullamco sunt proident mollit consequat ad cupidatat cupidatat enim. Ipsum duis pariatur do cillum adipisicing cupidatat do cupidatat occaecat. Est ea consequat exercitation do.
+</p>
+<p>
+    Amet sit sit ad aliquip irure id consequat qui proident ea irure anim aliqua. Laboris anim ut velit adipisicing nulla commodo exercitation pariatur culpa eiusmod nulla. Pariatur enim non eiusmod tempor ut Lorem sunt. Consequat adipisicing ipsum sunt elit incididunt veniam officia labore excepteur in qui ullamco. Irure irure est occaecat cillum duis laboris minim aute. Cillum enim duis reprehenderit pariatur do officia proident id exercitation irure officia enim. Culpa enim nostrud irure fugiat enim irure adipisicing ex excepteur aliquip dolore incididunt aliqua nisi.
+
+Amet cillum reprehenderit aliquip aute aute adipisicing do est est ad. Deserunt dolor minim do velit eiusmod. Do consequat minim aliquip deserunt eu eiusmod consectetur officia. Sint magna nulla labore aute mollit ea est non ex excepteur deserunt. Ullamco esse ea officia ut nulla in adipisicing.
+
+Ex tempor id eiusmod cillum id. Elit ullamco sunt proident mollit consequat ad cupidatat cupidatat enim. Ipsum duis pariatur do cillum adipisicing cupidatat do cupidatat occaecat. Est ea consequat exercitation do.
+</p>
+
+</body>
+</html>

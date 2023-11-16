@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- Utilizamos el elemento head para definir diferentes aspectos:
+- el título de la página
+- importar librerías css y javascript
+- metadatos para los navegadores y motores de búsqueda -->
+
+<head>
+
+    <!-- Ejemplo de título -->
+    <title>Este es el título de la página</title>
+
+    <meta name="description" content="Descripción para los buscador" />
+    
+    <!-- Etiqueta para indicar el autor de la web -->
+    <meta name="author" content="fundación Adecco">
+
+    <!-- Etiqueta de compatibilidad para versiones IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Etiqueta robots, indica a todos los search engine que deben indexar esta página -->
+    <meta name="robots" content="all" />
+
+        <!-- etiquetas para facebook open graph  -->
+
+
+    <meta property="og:url" content="https://www.web.com/" />
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Este es el título de la página" />
+    <meta property="og:description" content="Descripción para los buscador" />
+    <meta property="og:image" content="https://www.web.com/img/image.png" />
+    <meta property="og:image:width" content="640" />
+    <meta property="og:image:height" content="320" />
+
+    <!-- etiquetas para twitter -->
+    <meta name="twitter:site" content="@usuario" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Este es el título de la página" />
+    <meta name="twitter:description" content="Descripción para los buscador" />
+
+    <!-- Etiqueta para indicar la ruta al favicon, la imagen que se muestra en la pestaña del navegador -->
+    <link  rel="icon"   href="imagenes/favicon.png" type="image/png" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- La etiqueta canonical se utiliza para definir la url única que debe indexarse, es decir, hay situaciones en las que 2 o más urls muestran
+    la misma página. Lo que se busca es que solo se indexe la correcta -->
+    <link rel="canonical" href="https://www.web.com/" />
+
+
+    <!-- Ejemplo de metadatos  -->
+    <!-- Metadatos viewport: indica al navegador cómo debe controlar las dimensiones de la página, en función del dispositivo, etc. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Etiqueta base permite definir la url base para todas las urls relativas que usemos a lo largo de nuestro html -->
+    <base href="https://fundacionadecco.org/" target="_blank">
+
+    <!-- Ejemplo de cómo importar una hoja de estilos css -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Ejemplo de cómo importar un script de JavaScript  -->
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- Ejemplo de atributo en la etiqueta html para indicar el idioma -->
+<html lang="es">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        
+
+        <!-- Una tabla se compone se diferentes elementos: cabecera, filas, columnas. 
+        <table> define una tabla
+        <tr> define una fila (row)
+        <td> define datos para la tabla (data)
+        <th> define el encabezado de la tabla (head)
+        
+        
+        -->
+
+
+<table>
+
+  <tr>
+    <th>Nombres</th>
+  </tr>
+
+  <tr>
+    <td>Alan</td>
+  </tr>
+  <tr>
+    <td>Alan</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Email</th>
+    <th>Calle</th>
+    <th>Código postal</th>
+    <th>Empresa</th>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td>Juan</td>
+    <td>juan@company.es</td>
+    <td>Calle falsa 123</td>
+    <td>44050</td>
+    <td>Desarrollos cósmicos</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Roberto</td>
+    <td>roberto@company.es</td>
+    <td>Calle falsa 123</td>
+    <td>44050</td>
+    <td>Desarrollos cósmicos</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Alberto</td>
+    <td>alberto@company.es</td>
+    <td>Calle falsa 123</td>
+    <td>44050</td>
+    <td>Desarrollos cósmicos</td>
+  </tr>
+
+</table>
+<div style="margin-bottom:300px;"></div>
+
+
+        <table>
+
+          <!-- ENCABEZADO -->
+            <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Edad</th>
+            </tr>
+
+
+            <!-- DATOS -->
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Mark</td>
+              <td>Jackson</td>
+              <td>33</td>
+            </tr>
+        </table> 
+
+        <br>
+
+
+
+<div style="margin-bottom:300px;"></div>
+
+          <!-- El atributo colspan:
+        Nos permite asignar más de una columna a una celda de datos  -->
+        <table >
+            <tr>
+              <th>Nombre</th>
+              <th colspan="2">Teléfonos</th>  <!-- En este caso la cabecera Teléfono ocupará dos columnas-->
+              
+            </tr>
+            <tr>
+              <td>Bill Gates</td>
+              <td>987987987</td>
+              <td>654654654</td>
+            </tr>
+          </table> 
+
+          <br>
+          <!-- El atributo rowspan: lo utilizamos para que una celda ocupe más de una fila   -->
+
+          <table >
+            <tr>
+              <th>Nombre:</th>
+              <td>Bill Gates</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Contacto:</th>
+              <td>Texto 1</td>
+            </tr>
+            <tr>
+              <td>Texto 2</td>
+            </tr>
+          </table>
+
+          <br>
+          <!-- El elemento caption: lo utilizamos para añadir un pequeño título sobre una tabla  -->
+
+          <table >
+            <caption>Tabla de contactos</caption>
+            <tr>
+              <th>Nombre</th>
+              <th colspan="2">Teléfono</th>  <!-- En este caso la cabecera Teléfono ocupará dos columnas-->
+            </tr>
+            <tr>
+              <td>Bill Gates</td>
+              <td>55577854</td>
+              <td>55577855</td>
+            </tr>
+            <tr>
+                <td>Macklemore</td>
+                <td>23244235</td>
+                <td>23244234</td>
+              </tr>
+          </table> 
+
+
+          <!-- Usamos los elementos thead, tbody y tfooter para separar agrupar los diferentes contenidos de una tabla:
+          thead agrupa la cabecera de una tabla, es decir, los nombres de las columnas 
+          tbody agrupa el contenido de una tabla, es decir, los elementos que se muestran la información 
+          tfoot sirve para añadir información adicional a la tabla, como por ejemplo el número de elementos que hay, elementos de paginación, etc -->
+
+
+          <table>
+            <thead>
+              <tr>
+                <th>Month</th>
+                <th>Savings</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>January</td>
+                <td>$100</td>
+              </tr>
+              <tr>
+                <td>February</td>
+                <td>$80</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Sum</td>
+                <td>$180</td>
+              </tr>
+            </tfoot>
+          </table> 
+
+
+     
+    </body>
+</html>

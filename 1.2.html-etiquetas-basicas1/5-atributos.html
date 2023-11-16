@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Ejemplo de atributo en la etiqueta html para indicar el idioma -->
+<html lang="es">
+
+<head>
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- Las etiquetas html pueden definir atributos que añadan información adicional sobre un contenido para ser interpretado por el navegador 
+        En este ejemplo tenemos la equita <a> que representa un enlace, y esa etiquera tiene un atributo href con un texto asociado mediante = y comillas
+        En este caso este atributo define la url destino del enlace -->
+    <a title="Enlace a Fundación Adecco"
+    href="https://fundacionadecco.org/"
+    target="_blank"
+    >Fundación Adecco</a>
+
+    <!-- Los atributos también permiten añadir código CSS de forma directa: -->
+
+    <p >Texto rojo</p>
+
+    <!-- Los atributos también permiten añadir código CSS mediante clases.
+        Nota: estas clases no están creadas. Estudiaremos cómo funcionan en la parte de CSS -->
+    <p id="parrafo2" class="verde grande">Texto con clase ficticia</p>
+
+    <p id="parrafo3" class="verde">Este es el párrafo 3</p>
+
+    <!-- 1. DAR MÁS INFORMACIÓN A LOS USUARIOS -->
+    <!-- 2. AYUDAR A LOS MOTORES DE BÚSQUEDA A INDEXAR MEJOR ESTA WEB -->
+    <p title="Este texto se muestra como tooltip al pasar por encima por el ratón">Esto es un párrafo</p>
+
+    <!-- Se pueden utilizar comillas simples o dobles, en caso de que dentro del texto necesitemos usar unas u otras: -->
+
+    <p title="John 'Atkinson' fue el creador de esta pieza">Pieza única</p>
+    <p title='John "Atkinson" fue el creador de esta pieza'>Pieza única</p>
+
+    <p title="El 'valor' que sea"></p>
+
+    <!-- Para utilizar las mismas comillas dentro que en la apertura necesitariamos utilizar entidades html: -->
+
+    <p title="Jogn &quot;Atkinson&quot; fue el creador de esta pieza">Pieza única</p>
+
+  
+    </body>
+</html>
