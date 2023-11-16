@@ -14,52 +14,135 @@
 
             <thead style="background-color: antiquewhite;">
                 <tr>
+                    <th scope="col">Imagen</th>
                     <th scope="col">Modelo</th>
                     <th scope="col">RAM</th>
                     <th scope="col">CPU</th>
                     <th scope="col">Precio</th>
+                    <th scope="col">Acciones</th>
                 </tr>
             </thead>
             <tfoot>
                 <tr>
+                    <th scope="col">Img</th>
                     <th scope="col">Nombre comercial</th>
                     <th scope="col">GB</th>
                     <th scope="col">Tipo</th>
                     <th scope="col">€</th>
+                    <th scope="col">Accion</th>
+                    
                 </tr>
             </tfoot>
 
             <tbody style="background-color: aquamarine;">
                 <tr>
+                    <td>
+                        <img src="https://ui-avatars.com/api/?name=MSI&size=30" alt="Avatar User">
+                    </td>
                     <td>Ordenador MSI Modern</td>
                     <td>32 GB</td>
                     <td>i7</td>
                     <td>499,50 €</td>
+                    <td>
+                        <button>Ver</button>
+                        <button>Editar</button>
+                        <button>Borrar</button>
+                    </td>
                 </tr>
                 <tr>
+                    <td>
+                        <img src="https://ui-avatars.com/api/?name=MSI&size=30" alt="Avatar User">
+                    </td>
                     <td>Ordenador MSI Modern</td>
                     <td>32 GB</td>
                     <td>i7</td>
                     <td>499,50 €</td>
+                    <td>
+                        <button>Ver</button>
+                        <button>Editar</button>
+                        <button>Borrar</button>
+                    </td>
                 </tr>
                 <tr>
+                    <td>
+                        <img src="https://ui-avatars.com/api/?name=MSI&size=30" alt="Avatar User">
+                    </td>
                     <td>Ordenador MSI Modern</td>
                     <td>32 GB</td>
                     <td>i7</td>
                     <td>499,50 €</td>
+                    <td>
+                        <button>Ver</button>
+                        <button>Editar</button>
+                        <button>Borrar</button>
+                    </td>
                 </tr>
                 <tr>
+                    <td>
+                        <img src="https://ui-avatars.com/api/?name=MSI&size=30" alt="Avatar User">
+                    </td>
                     <td>Ordenador MSI Modern</td>
                     <td>32 GB</td>
                     <td>i7</td>
                     <td>499,50 €</td>
+                    <td>
+                        <button>Ver</button>
+                        <button>Editar</button>
+                        <button>Borrar</button>
+                    </td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <th colspan="4" style="text-align:center;">Hay 4 resultados</td>
+                    <th colspan="6" style="text-align:center;">Hay 4 resultados</td>
                 </tr>
             </tfoot>
     </table>
+<h2>Table 2 con rowspan</h2>
+<table style="border:1px solid black">
+    <caption>Productos de informatica</caption>
+
+        <thead style="background-color: antiquewhite;">
+            <tr>
+                <th scope="col">Modelo</th>
+                <th scope="col">RAM</th>
+                <th scope="col">CPU</th>
+                <th scope="col">Precio</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th scope="col">Nombre comercial</th>
+                <th scope="col">GB</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">€</th>
+            </tr>
+        </tfoot>
+
+        <tbody style="background-color: aquamarine;">
+            <tr>
+                <td rowspan="3">Ordenador MSI Modern</td>
+                <td>32 GB</td>
+                <td>i7</td>
+                <td>499,50 €</td>
+            </tr>
+            <tr>
+                <td>32 GB</td>
+                <td>i7</td>
+                <td>499,50 €</td>
+            </tr>
+            <tr>
+                <td>32 GB</td>
+                <td>i7</td>
+                <td>499,50 €</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" style="text-align:center;">Hay 4 resultados</td>
+            </tr>
+        </tfoot>
+</table>
+
 </body>
 </html>
