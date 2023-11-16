@@ -3,11 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="boton_enviar.css">
     <title>Formlarios</title>
 </head>
 <body>
-    <form action="/backend" method="post">
-        <input type="text">
+    <h1>FORMULARIO 1 CURSO ADECCO</h1>
+    <form action="https://formsubmit.co/diegodelavegamartin@gmail.com" method="POST">
+        <!-- Varios inputs escondidos -->
+        <input type="hidden" name="_next" value="https://www.abc.es">
+        <input type="hidden" name="_subject" value="Nueva respuesta al formulario!">
+        <input type="hidden" name="_autoresponse" value="Muchas gracias por rellenar el formulario. En breve nos pondremos en contacto contigo. Animo! Angel Martinez CEO de mi casa">
+    
+        <div class="div_externo">
+            <div>
+                <label for="firstName">Nombre</label>
+                <input type="text" name="firstName" id="firstName" placeholder="escribe nombre">
+            </div>
+            <div>
+                <label for="surname">Apellido</label>
+                <input type="text" name="surname" id="surname" placeholder="escribe apellido">
+            </div>
+            <div>
+                <label for="nif">DNI/NIF</label>
+                <input type="text" name="nif" id="nif" placeholder="1234567L">
+            </div>
+            <div>
+                <label for="phone">Telefono</label>
+                <input type="tel" name="phone" id="phone" placeholder="+34 1234567" value="+34 ">
+            </div>
+            <div>
+                <label for="email">Correo Electronico</label>
+                <input type="email" name="email" id="email" placeholder="escribe email" required>
+            </div>
+            <div>
+                <label for="age">Edad</label>
+                <input type="number" name="age" id="age" placeholder="edad">
+            </div>
+            <div>
+                <label for="salary">Sueldo</label>
+                <input type="number" name="age" id="salary" placeholder="salario" step="200">
+            </div>
+            <div>
+                <label for="weight">Weight (Kg)</label>
+                <input type="number" name="weight" id="weight" placeholder="peso" step="any">
+            </div>
+            <div>
+                <label for="height">Height (cm)</label>
+                <input type="number" name="height" id="height" placeholder="altura" step="any" min="50" max="240">
+            </div>
+            <div>
+                <label for="bio">Biografia</label>
+                <textarea name="bio" id="bio" cols="23" rows="3" maxlength="100"></textarea>
+            </div>
+        </div>
+
+        <div>
+            <input type="checkbox" name="checkbox" id="checkbox" required>
+            <label for="checkbox">He leido y acepto los <a href="#">terminos y condiciones</a></label>
+        </div>
+
+        <div>
+            <input type="radio" id="male" name="genre" value="male">
+            <label for="male">Masculino</label>
+
+            <input type="radio" id="female" name="genre" value="female">
+            <label for="female">Femenino</label>
+
+            <input type="radio" id="other" name="genre" value="other">
+            <label for="other">Otro</label>
+        </div>
+
+        <div>
+            <label for="date">Fecha de nacimiento</label>
+            <input type="date" id="date" name="date" min="2020-01-01" max="2023-12-31">
+        </div>
+
+        <div>
+            <label for="datetime-local">Fecha de comienzo de curso</label>
+            <input type="datetime-local" id="datetime-local" name="datetime-local">
+        </div>
+
+        <button type="submit" class="gradient-border" id="box">Enviar</button>
     </form>
 </body>
 </html>
