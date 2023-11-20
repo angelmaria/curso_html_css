@@ -8,8 +8,8 @@
     <title>Formlarios</title>
 </head>
 <body>
-    <h1>FORMULARIO 1 CURSO ADECCO</h1>
-    <form action="https://formsubmit.co/diegodelavegamartin@gmail.com" method="POST">
+    <h1 style="text-shadow: 2px 2px 1px black;color: gray; font-family: 'Oswald', Verdana, Geneva, Tahoma, sans-serif; margin-left: 20px; text-align:center">FORMULARIO 1 CURSO ADECCO</h1>
+    <form action="/backend" method="post">
         <!-- Varios inputs escondidos -->
         <input type="hidden" name="_next" value="https://www.abc.es">
         <input type="hidden" name="_subject" value="Nueva respuesta al formulario!">
@@ -42,7 +42,7 @@
             </div>
             <div>
                 <label for="salary">Sueldo</label>
-                <input type="number" name="age" id="salary" placeholder="salario" step="200">
+                <input type="number" name="salary" id="salary" placeholder="salario" step="200">
             </div>
             <div>
                 <label for="weight">Weight (Kg)</label>
@@ -54,7 +54,7 @@
             </div>
             <div>
                 <label for="bio">Biografia</label>
-                <textarea name="bio" id="bio" cols="23" rows="3" maxlength="100"></textarea>
+                <textarea name="bio" id="bio" cols="34" rows="3" maxlength="100"></textarea>
             </div>
         </div>
 
@@ -80,11 +80,48 @@
         </div>
 
         <div>
-            <label for="datetime-local">Fecha de comienzo de curso</label>
+            <label for="datetime-local">Fecha de comienzo de curso &alpha</label>
             <input type="datetime-local" id="datetime-local" name="datetime-local">
+        </div>
+        <div>
+            <label for="company">Empresa</label>
+            <select name="company" id="id_company">
+                <option value="" disabled selected>Seleccionar empresa</option>
+                <option value="adecco">Adecco</option>
+                <option value="certidevs">Certidevs</option>
+                <option value="cosmicDevelopments">Cosmic Developments</option>
+            </select>
+        </div>
+        <div class="multiple">
+            <label for="knowledge">Que lenguajes sabes?</label>
+            <select name="knowledge" id="knowledge" multiple>
+                <option value="" disabled selected>Seleccionar lenguaje</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="pass">Contrasena</label>
+            <input type="password" name="pass" id="pass">
+            <button class="pass" type="button" onclick="showPassword()">Mostrar password</button>
         </div>
 
         <button type="submit" class="gradient-border" id="box">Enviar</button>
     </form>
+
+<script>
+    function showPassword() {
+        let passInput = document.getElementById('pass');
+        if (passInput.type === 'password') {
+            passInput.type= 'text';
+        } else {
+            passInput.type = 'password'
+        }
+    }
+</script>
+
 </body>
 </html>
