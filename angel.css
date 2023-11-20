@@ -53,3 +53,17 @@ button.pass {
     background-color: rgb(246, 246, 246);
     color: rgb(206, 132, 76);
 }
+/* formating the navigation pane */
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 10px;
+    color: rgb(55, 36, 0);
+    text-decoration: none;
+    font-weight: 800;
+}
+/* para eliminar raya de los links del navegador */
+nav ul a{
+    text-decoration: none;
+}
