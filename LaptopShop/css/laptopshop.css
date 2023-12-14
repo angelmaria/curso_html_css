@@ -1,0 +1,53 @@
+body {
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #70a4e4;
+}
+
+.navbar .navbar-collapse {
+  background-color: #70a4e4;
+  font-weight: bold;
+  color: white;
+}
+
+th {
+  color: #a7490b;
+  background-color: silver;
+}
+
+td {
+  background-color: beige;
+}
+
+.img32 {
+  height: 32px;
+  width: 32px;
+}
+
+.img150 {
+  height: 150px;
+  width: 150px;
+}
+
+.non-underline-link {
+  text-decoration: none !important;
+}
+
+.aTexto {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.material-icons-new {
+  font-family: "Material Icons";
+  vertical-align: -10%;
+  font-size: 20px;
+}
+
+#sesion {
+  
+}

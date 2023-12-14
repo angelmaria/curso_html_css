@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="img/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="img/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="css/laptopshop.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+      integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.2/sweetalert2.min.css"
+      integrity="sha512-gPshpNHQcBrCcqKFYZ11amBNKuqpRgMwjUT7NE6986yWK9UQCHFUDYjpAnP5pVqOS/fD3MsAl5zgoZwvsGEGrA=="
+      crossorigin="anonymous"
+    />
+
+    <title>LaptopShop</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#opciones"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- logo -->
+      <a class="navbar-brand" href="#">
+        <img
+          class="img32 img-fluid"
+          src="img/laptop-icon-w.png"
+          alt="laptop-icon"
+        />LaptopShop</a
+      >
+      <!-- enlaces -->
+      <div class="collapse navbar-collapse" id="opciones">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="sesion" class="nav-link" href="#"
+              ><span class="material-icons-new">close</span>CIERRA
+              SESI&Oacute;N</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="laptop-list.html"
+              ><span class="material-icons-new">format_list_bulleted</span
+              >LISTADO</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <br />
+
+    <header>
+      <h1 class="h2">
+        <img
+          class="img32 img-fluid"
+          src="img/laptop-icon.png"
+          alt="laptop-icon"
+        />LaptopShop
+      </h1>
+    </header>
+
+    <br />
+
+    <main>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <table class="table table-responsive">
+              <tr>
+                <td>
+                  <form class="form" action="" method="POST">
+                    <h3 class="h4">Modifica o crea un portátil</h3>
+                    <div class="form-group form-horizontal">
+                      <label class="form-label" for="modelo"
+                        ><span class="material-icons-new"
+                          >laptop_chromebook</span
+                        >
+                        Modelo:</label
+                      ><br />
+                      <input
+                        type="text"
+                        class="form-input-text w-100"
+                        autofocus
+                        required
+                        id="modelo"
+                        name="modelo"
+                        placeholder="MacBook Pro"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="fabricante"
+                        ><i class="fas fa-industry"></i> Selecciona un
+                        fabricante:</label
+                      ><br />
+                      <select
+                        class="form-select dropdown-toggle w-100"
+                        required
+                        id="fabricante"
+                        name="fabricante"
+                        size="1"
+                      >
+                        <option value="">Elige una opci&oacute;n:</option>
+                        <option value="1" selected>Apple</option>
+                        <option value="2">Huawei</option>
+                        <option value="3">Asus</option>
+                        <option value="4">Microsoft</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="precio"
+                        >&euro; Precio:</label
+                      ><br />
+                      <input
+                        class="form-input-text w-100"
+                        type="number"
+                        required
+                        placeholder="1289.00"
+                        id="precio"
+                        name="precio"
+                        step="0.01"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="ram">GB RAM:</label><br />
+                      <input
+                        class="form-control w-100"
+                        type="number"
+                        required
+                        min="2"
+                        max="100"
+                        id="ram"
+                        name="ram"
+                        step="2"
+                        placeholder="8"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="descripcion"
+                        ><span class="material-icons-new">description</span>
+                        Descripci&oacute;n:</label
+                      ><br />
+                      <textarea
+                        class="form-textarea w-100"
+                        id="descripcion"
+                        required
+                        name="descripcion"
+                        cols="36"
+                        rows="5"
+                        placeholder="Procesador intel core.i5 de cuatro n&#250;cleos de octava generaci&#243;n. Pantalla retina brillante con tecnolog&#237;a true.tone. Touch bar y touch.id. Gr&#225;ficos intel iris plus graphics.645. Almacenamiento ssd ultrarr&#225;pido."
+                      ></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="imagen"
+                        ><span class="material-icons-new"
+                          >add_photo_alternate</span
+                        >
+                        Imagen:</label
+                      ><br />
+                      <input
+                        class="form-file"
+                        type="file"
+                        required
+                        id="imagen"
+                        name="imagen"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input class="form-submit" type="submit" value="Enviar" />
+                    </div>
+                  </form>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <br />
+
+    <footer class="bg-primary text-white text-center text-lg-start">
+      <div class="text-center p-3">
+        Adecco
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"
+      integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.2/sweetalert2.min.js"
+      integrity="sha512-WQHFU2G1j9ca/OT3ozRySJtB2K/yy/Fg44kHveA65IrrYM2qbzgXLgJBvwV6Spd4aziAJaklY8T7thMcBejq4w=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/laptopshop.js"></script>
+  </body>
+</html>
